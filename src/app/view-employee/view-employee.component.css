@@ -1,0 +1,30 @@
+.vertical-align{
+    display:flex;
+    align-items: center;
+}
+.body-center {
+    margin-left: 17%;
+    margin-top: 1%;
+}
+.buttonStyle{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    float: right;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.headerfont
+{
+    font-size: 15px;
+}
+.datafont
+{
+    font-size: 14px;
+}
+.headingalign
+{
+    margin-left: 38%;
+    font-size: 36px;
+}

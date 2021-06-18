@@ -1,0 +1,69 @@
+<div class="container mt-5">
+    <div fxLayoutAlign="center center" fxFlexFill  class=" cardstyle Stylecard " >
+          <div class="card-style" fxFlex="100%" style="padding: 0% 0% 1% 0%;">  
+          <div color="primary" class = "header"><h2 class="RegForm">REGISTRATION FORM </h2></div>
+              <form [formGroup]="AddemployeeForm" (ngSubmit)="Customer(AddemployeeForm.value)" class="needs-validation" novalidate>
+              
+                  <div class="">
+                      <div class="row">
+                          <div class="form-group col-sm-12 divcol-style ">
+                        <label class="label-font" for="FirstName">First Name</label>
+                        <input formControlName="FirstName" required type="text" class="form-control textfont" [(ngModel)]="firstName" name="FirstName"
+                        id="FirstName" required>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                     
+                      </div>
+                      <div class="row">
+                          <div class="form-group col-sm-12 divcol-style ">
+                        <label class="label-font" for="">Last Name</label>
+                        <input formControlName="LastName" type="text" class="form-control textfont" [(ngModel)]="lastName" name="LastName">
+                      </div>
+    
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12 divcol-styles">
+                        <label class="label-font-contact" for="">Contact Number</label>
+                        <input formControlName="ContactNumber" type="number" pattern=".{10,}" onKeyPress="if(this.value.length>=10)   return false;" class="form-control textfont" [(ngModel)]="contactNumber" name="ContactNumber">
+                        <div class="errors" *ngIf="AddemployeeForm.get('ContactNumber')!.hasError('pattern')">
+                            <small class="txt-error">Please enter a valid 10 digit mobile number</small> 
+                          </div>
+                         
+                    </div>
+                    </div>
+      
+                       <div class="row">
+                        <div class="form-group col-sm-12 divcol-styles hasError">
+                          <label  class="label-font-email" for="">Email ID</label>
+                          <input formControlName="EmailId" type="email" class="form-control textfont" [(ngModel)]="emailId" name="EmailId">
+                          <div class="errors" *ngIf="AddemployeeForm.get('EmailId')!.hasError('email')">
+                            <small class="txt-error">Please enter valid Email Id eg : xyz@gmail.com</small> 
+                          </div>  
+                        </div>  
+                         </div>
+    
+                        <!-- <div class="row">
+                          <div class="form-group col-sm-12 divcol-style ">
+                        <label class="label-font" for="">Employee ID</label>
+                        <input formControlName="EmployeeID" type="text" class="form-control" name="EmployeeID">
+                          </div>
+                          </div> -->
+                        
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary btnstyle">Save</button>
+                          <button type="reset" (click)="onreset()" class="btn btn-Position btnstyle clearColor">Clear</button>
+                          <a routerLink='' class="btn btn-warning btn-Position btnstyle">Show List</a>
+                        </div> 
+                      
+                       <!-- <p *ngIf="dataSaved"  Class="success" >  
+                          {{message}}  
+                      </p>  -->
+                      </div>
+                     
+    
+              </form>
+          </div>
+    </div>
+    </div>
+    
+    

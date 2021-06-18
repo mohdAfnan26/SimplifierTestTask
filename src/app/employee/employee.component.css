@@ -1,0 +1,63 @@
+.btn-Position{
+    margin: 1%
+}
+
+.Stylecard{
+    
+    width: 30%;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+.RegForm{
+    font-weight: bolder;
+    background-color: #f58938;
+    height: 67px;
+    padding-top: 19px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    font-size: 24px;
+    color: white;
+}
+.label-font{
+    font-size: 16px;
+    margin-left: -69%;
+}
+.label-font-contact{
+    font-size: 16px;
+    margin-left: -56%;
+}
+.label-font-email{
+    font-size: 16px;
+    margin-left: -74%;
+}
+.card-style{
+    /* border: 1px solid black; */
+    /* box-shadow: 0 1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.1), 0 2px 20px 0 rgba(0,0,0,.2); */
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.txt-error
+{
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+}
+.btnstyle
+{
+    width: 30%;
+    margin-left: 2%;
+    height: 32px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+.clearColor
+{
+    background-color: darkgrey;
+    border: none;
+}
+.textfont
+{
+    font-size: 14px;
+}
